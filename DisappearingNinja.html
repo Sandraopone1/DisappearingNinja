@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>click demo</title>
+  <style>
+  #wrapper{
+  	background-color: pink;
+  	height: 550px;
+  }
+img{
+	width: 200px;
+	height: 150px;
+	margin: 8px;
+	margin-top: 40px;
+}
+input{
+	background-color: purple;
+	width: 150px;
+	height: 50px;
+	position: relative;
+	left: 400px;
+	top: 70px;
+	color: white;
+}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+ 		$('img').click(function(){
+ 			$(this).hide();
+ 		});
+ 		$('#reset').click(function(){
+ 			$('img').show('slow');
+ 		})
+  
+  
+  });
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="show">
+			<img src="girl.jpg" alt="A girl with a camera"/>
+			<img src="girl.jpg" alt="A girl with a camera"/>
+			<img src="girl.jpg" alt="A girl with a camera"/>
+			<img src="girl.jpg" alt="A girl with a camera"/>
+			<img src="girl.jpg" alt="A girl with a camera"/>
+			<img src="girl.jpg" alt="A girl with a camera"/>
+			<img src="girl.jpg" alt="A girl with a camera"/>
+			<img src="girl.jpg" alt="A girl with a camera"/>
+		</div>
+		<input type="button" id="reset" name="Rest" value="Reset">
+
+    </div>
+ 
+</body>
+</html>
